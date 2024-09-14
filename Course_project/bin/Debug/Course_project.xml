@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Course_project</name>
+    </assembly>
+    <members>
+        <member name="T:Course_project.Edit_Book">
+            <summary>
+            Класс формы редактирования книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Edit_Book.Title">
+            <summary>
+            поле названия книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Edit_Book.Author">
+            <summary>
+            поле автора книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Edit_Book.Genre">
+            <summary>
+            поле жанра книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Edit_Book.CountPages">
+            <summary>
+            поле количества страниц в книге
+            </summary>
+        </member>
+        <member name="F:Course_project.Edit_Book.ProductionYear">
+            <summary>
+            поле года издания книги
+            </summary>
+        </member>
+        <member name="M:Course_project.Edit_Book.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Конструктор по умолчанию
+            </summary>
+            <param name="title">название</param>
+            <param name="author">автор</param>
+            <param name="genre">жанр</param>
+            <param name="countPages">количество страниц</param>
+            <param name="productionYear">год издания</param>
+            <param name="bookID">id книги</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.CheckOnCorrectTitle(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода названия книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.CheckOnCorrectAuthor(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода автора книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.CheckOnCorrectNumber(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода количества страниц книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.CheckOnCorrectYear(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода года выпуска книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.CheckOnCorrectGenre(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода жанра книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="P:Course_project.Edit_Book.FlagCorrect">
+            <summary>
+            Свойство для проверки корректности заполнения всех полей ввода
+            </summary>
+        </member>
+        <member name="M:Course_project.Edit_Book.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+             Кнопка добавления книги в базу
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы добавления книги
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.Edit_Book.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Edit_Book.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Edit_Book.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.Add_Book">
+            <summary>
+            Класс формы добавления книги в книгохранилище
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Book.title">
+            <summary>
+            поле названия книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Book.author">
+            <summary>
+            поле автора книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Book.genre">
+            <summary>
+            поле жанра книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Book.countPages">
+            <summary>
+            поле количества страниц
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Book.productionYear">
+            <summary>
+            поле года издания книги
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Book.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Book.CheckOnCorrectTitle(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода названия книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Book.CheckOnCorrectAuthor(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода автора книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Book.CheckOnCorrectNumber(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода количества страниц книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Book.CheckOnCorrectYear(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода года выпуска книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Book.CheckOnCorrectGenre(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода жанра книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="P:Course_project.Add_Book.FlagCorrect">
+            <summary>
+            Свойство для проверки корректности заполнения всех полей ввода
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Book.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+             Кнопка добавления книги в базу
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Add_Book.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы добавления книги
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.Add_Book.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Book.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Add_Book.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.Add_Client">
+            <summary>
+            Класс формы добавления клиента
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.firstName">
+            <summary>
+            поле фамилии клиента
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.lastName">
+            <summary>
+            поле имени клиента
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.date">
+            <summary>
+            поле даты выдачи книги клиенту
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.deadline">
+            <summary>
+            поле крайнего срока сдачи книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.phone">
+            <summary>
+            поле телефона клиента
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.BookID">
+            <summary>
+            поле id книги
+            </summary>
+        </member>
+        <member name="F:Course_project.Add_Client.isReturned">
+            <summary>
+            поле состояния сдачи книги
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Client.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Client.CheckOnCorrectName(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода имени и фамилии клиента
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Client.CheckOnCorrectDate(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода даты выдачи книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Client.CheckOnCorrectDeadline(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода крайнего срока сдачи книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Client.CheckOnCorrectPhone(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода телефона клиента
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="M:Course_project.Add_Client.CheckOnCorrectID(System.Windows.Forms.TextBox)">
+            <summary>
+            Проверка  ввода id книги
+            </summary>
+            <param name="tb">Поле ввода</param>
+        </member>
+        <member name="P:Course_project.Add_Client.FlagCorrect">
+            <summary>
+            Свойство для проверки корректности заполнения всех полей ввода
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Client.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка добавления клиента в базу
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Add_Client.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы добавления клиента
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.Add_Client.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Add_Client.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Add_Client.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.Books">
+            <summary>
+            Класс формы работы с книгохранилищем
+            </summary>
+        </member>
+        <member name="F:Course_project.Books.FILE_BOOKS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по книгам
+            </summary>
+        </member>
+        <member name="F:Course_project.Books.FILE_CLIENTS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по клиентам
+            </summary>
+        </member>
+        <member name="F:Course_project.Books.number">
+            <summary>
+            поле для хранения номера строки
+            </summary>
+        </member>
+        <member name="F:Course_project.Books.n_books">
+            <summary>
+            поле для хранения количества книг
+            </summary>
+        </member>
+        <member name="F:Course_project.Books.ID">
+            <summary>
+            поле id книги 
+            </summary>
+        </member>
+        <member name="M:Course_project.Books.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.Books.Books_Load(System.Object,System.EventArgs)">
+            <summary>
+            Отображение всех книг из книгохранилища
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.WriteToFile``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Запись в файл
+            </summary>
+            <typeparam name="T">Тип</typeparam>
+            <param name="data">Имя списка</param>
+            <param name="FILE_NAME">Имя файла, в который записывается</param>
+        </member>
+        <member name="M:Course_project.Books.ReadFromFile``1(System.String)">
+            <summary>
+            Чтение из файла
+            </summary>
+            <typeparam name="T">Тип</typeparam>
+            <param name="FILE_NAME">Имя файла, в который записывается</param>
+        </member>
+        <member name="M:Course_project.Books.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка открытия формы добавления книги
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Course_project.Books.btn_Remove_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка удаления книги
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.Print(Course_project.InfoBooks)">
+            <summary>
+            Вывод всех строчек с информацией о каждой книге
+            </summary>
+            <param name="book"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Course_project.Books.btn_filter_Click(System.Object,System.EventArgs)">
+            <summary>
+            Фильтрация книг по заданному критерию
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.btn_search_Click(System.Object,System.EventArgs)">
+            <summary>
+            Поиск книги по заданному id
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.btn_Reset_Click(System.Object,System.EventArgs)">
+            <summary>
+            Сброс всех фильтров
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.dataGridView1_CellContentDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Редактирование книги
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Books.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы управления книгохранилищем
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.Books.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Books.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Books.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.Clients">
+            <summary>
+            Класс формы работы с клиентами
+            </summary>
+        </member>
+        <member name="F:Course_project.Clients.FILE_BOOKS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по книгам
+            </summary>
+        </member>
+        <member name="F:Course_project.Clients.FILE_CLIENTS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по клиентам
+            </summary>
+        </member>
+        <member name="F:Course_project.Clients.n_clients">
+            <summary>
+            поле для хранения количества клиентов
+            </summary>
+        </member>
+        <member name="F:Course_project.Clients.numbers">
+            <summary>
+            поле для хранения номера строки
+            </summary>
+        </member>
+        <member name="M:Course_project.Clients.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.Clients.Clients_Load(System.Object,System.EventArgs)">
+            <summary>
+            Отображение всех клиентов из базы данных
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Clients.WriteToFile``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Запись в файл
+            </summary>
+            <typeparam name="T">Тип</typeparam>
+            <param name="data">Имя списка</param>
+            <param name="FILE_NAME">Имя файла, в который записывается</param>
+        </member>
+        <member name="M:Course_project.Clients.ReadFromFile``1(System.String)">
+            <summary>
+            Чтение из файла
+            </summary>
+            <typeparam name="T">Тип</typeparam>
+            <param name="FILE_NAME">Имя файла, в который записывается</param>
+        </member>
+        <member name="M:Course_project.Clients.btn_Add_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка открытия формы добавления клиента
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Course_project.Clients.btn_Remove_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка удаления клиента
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Clients.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы управления клиентами
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Course_project.Clients.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Clients.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Clients.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.Info">
+            <summary>
+            Класс хранящий id книги
+            </summary>
+        </member>
+        <member name="T:Course_project.InfoBooks">
+            <summary>
+            Класс с информацией о книге
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoBooks.Title">
+            <summary>
+            свойство названия книги
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoBooks.Author">
+            <summary>
+            свойство автора книги
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoBooks.Genre">
+            <summary>
+            свойство жанра книги
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoBooks.CountPages">
+            <summary>
+            свойство количества страниц книги
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoBooks.ProductionYear">
+            <summary>
+            свойство года издания книги
+            </summary>
+        </member>
+        <member name="M:Course_project.InfoBooks.CompareTo(System.Object)">
+            <summary>
+            проверка id книги
+            </summary>
+            <param name="obj">объект, который проверяется</param>
+            <returns>id</returns>
+        </member>
+        <member name="M:Course_project.InfoBooks.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="title">название</param>
+            <param name="author">автор</param>
+            <param name="genre">жанр</param>
+            <param name="countPages">количество страниц</param>
+            <param name="productionYear">год издания</param>
+            <param name="bookID">id книги</param>
+        </member>
+        <member name="T:Course_project.InfoClients">
+            <summary>
+            Класс с информацией о клиенте
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.FirstName">
+            <summary>
+            свойство фамилии
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.LastName">
+            <summary>
+            свойство имени
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.Date">
+            <summary>
+            свойство даты выдачи книги
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.Deadline">
+            <summary>
+            свойство крайнего срока сдачи
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.Phone">
+            <summary>
+            свойство телефона
+            </summary>
+        </member>
+        <member name="P:Course_project.InfoClients.IsReturned">
+            <summary>
+            свойство статуса сдачи
+            </summary>
+        </member>
+        <member name="M:Course_project.InfoClients.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="firstName">фамилия</param>
+            <param name="lastName">имя</param>
+            <param name="date">дата выдачи</param>
+            <param name="deadline">дата сдачи</param>
+            <param name="phone">телефон</param>
+            <param name="bookID">id книги</param>
+            <param name="isReturned">статус сдачи</param>
+        </member>
+        <member name="F:Course_project.Menu.components">
+            <summary>
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:Course_project.Menu.Dispose(System.Boolean)">
+            <summary>
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:Course_project.Menu.InitializeComponent">
+            <summary>
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="T:Course_project.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:Course_project.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:Course_project.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="P:Course_project.Properties.Resources.books">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Course_project.Report">
+            <summary>
+            Класс формы отчета по должникам
+            </summary>
+        </member>
+        <member name="F:Course_project.Report.FILE_BOOKS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по книгам
+            </summary>
+        </member>
+        <member name="F:Course_project.Report.FILE_CLIENTS">
+            <summary>
+            Константа, содержащая имя json-файла с информацией по клиентам
+            </summary>
+        </member>
+        <member name="F:Course_project.Report.number">
+            <summary>
+            поле для хранения номера строки
+            </summary>
+        </member>
+        <member name="M:Course_project.Report.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.Report.Report_Load(System.Object,System.EventArgs)">
+            <summary>
+            Отображение всех должников
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.Report.ReadFromFile``1(System.String)">
+            <summary>
+            Чтение из файла
+            </summary>
+            <typeparam name="T">Тип</typeparam>
+            <param name="FILE_NAME">Имя файла, в который записывается</param>
+        </member>
+        <member name="M:Course_project.Report.btn_Back_Click(System.Object,System.EventArgs)">
+            <summary>
+            Кнопка выхода из формы отчета по должникам
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.Report.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.Report.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.Report.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Course_project.StartForm">
+            <summary>
+            Класс загрузочной формы
+            </summary>
+        </member>
+        <member name="M:Course_project.StartForm.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Course_project.StartForm.StartForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Отображение формы с задержкой
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="M:Course_project.StartForm.StartForm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Закрытие формы
+            </summary>
+            <param name="sender">Объект, который вызвал срабатывание</param>
+            <param name="e">Объект, с дополнительной информацией</param>
+        </member>
+        <member name="F:Course_project.StartForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Course_project.StartForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Course_project.StartForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
